@@ -25,11 +25,12 @@
 #accordion li {
     list-style: none;
     width: 100%;
-    margin-bottom: 10px;
-    background:var(--color-background);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+#accordion p {
     padding: 10px;
-    border-radius: 4px;
-    
 }
     
 #accordion li label {
@@ -41,7 +42,7 @@
     font-weight: 500;
     cursor: pointer;
     color: var(--color-heading) ;
-    
+    background: var(--color-background);
 }
     
 #accordion li label span {
@@ -50,7 +51,7 @@
     color: var(--color-accent);
 }
     
-#accordion label+input[type="radio"] {
+#accordion label+input[type="checkbox"] {
     display:none;
 }
 
@@ -59,10 +60,10 @@
     line-height: 26px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: max-height 0.5s ease-in-out;
 }
     
-#accordion label+input[type="radio"]:checked+.content {
+#accordion label+input[type="checkbox"]:checked+.content {
     max-height: 400px;
 }
     
