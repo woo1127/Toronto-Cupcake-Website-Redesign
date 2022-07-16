@@ -75,7 +75,7 @@
     background-repeat: no-repeat;
     background-color: lightpink;
     background-blend-mode: overlay;
-    height: 95vh;
+    height: 90vh;
     background-image: url('../image/banner.gif');
     display: flex;
     align-items: center;
